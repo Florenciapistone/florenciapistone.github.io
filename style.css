@@ -1,0 +1,53 @@
+:root{--paper:#f7f4ed;--ink:#211f1b;--sand:#ded7ca;--line:#bcb5a9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.58 Arial,sans-serif}a{color:inherit;text-underline-offset:5px}a:focus-visible{outline:3px solid #946021;outline-offset:4px}header,main,footer{width:min(1170px,90%);margin:auto}header{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--line)}.brand{font-weight:400;font-size:24px;letter-spacing:.01em}header a,.card,.button{text-decoration:none}nav,.actions{display:flex;gap:26px;align-items:center}nav{font-size:14px}nav a:hover,.card:hover h3{text-decoration:underline}.hero{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:6%;padding:44px 0 58px}.hero img{width:100%;height:clamp(400px,42vw,585px);object-fit:cover;object-position:50% 66%}h1,h2,h3{margin:0;line-height:1.13;letter-spacing:.012em;font-weight:400}h1,h2,.brand{font-family:'Arial Narrow','Liberation Sans Narrow',Arial,sans-serif}h1{font-size:clamp(48px,6.6vw,90px)}.hero h1 {
+  margin: 20px 0 24px;
+  font-size: clamp(62px, 8vw, 118px);
+  font-weight: 900;
+  line-height: .97;
+  letter-spacing: -.055em;
+  text-transform: uppercase;
+}.hero em{color:#625c50}small{font-size:12px;font-weight:400;letter-spacing:.11em;text-transform:uppercase}.hero p{max-width:42ch}.actions{margin-top:28px;font-size:15px}.button{background:var(--ink);color:var(--paper);padding:12px 18px}.button:hover{background:#514b40}h2{font-size:clamp(34px,4vw,55px)}#proyectos,#sobre-mi,footer{border-top:1px solid var(--line);padding:38px 0 55px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:42px 28px;margin-top:30px}.cover{aspect-ratio:1536/640;overflow:hidden;background:var(--sand);margin-bottom:15px}.cover img{width:100%;height:100%;object-fit:cover}.velina .cover img{object-fit:contain;background:#292e70}.marcas-personales .cover img{object-position:center 45%}h3{font-size:clamp(24px,2.7vw,36px);margin:10px 0}.card h3 span{font-size:.65em}.card p{margin:8px 0;max-width:52ch}.card small{font-size:11px}#sobre-mi,footer{display:grid;grid-template-columns:1fr 1.4fr;gap:30px}#sobre-mi p:first-child{margin-top:0}footer{padding-bottom:60px}footer a{display:inline-block;margin:4px 0}article{padding:35px 0 55px}article>p{max-width:68ch;font-size:18px}.intro{margin:55px 0 25px}.intro h1{margin-top:14px;font-size:clamp(38px,5vw,68px)}article h2{font-size:clamp(27px,3.1vw,40px);margin-top:46px}.gallery{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}figure{margin:8px 0;max-width:48%;width:375px}figure img{max-width:100%;max-height:540px;display:block}figcaption{font-size:14px;color:#554f47;padding-top:8px}.next{display:inline-block;margin-top:40px}@media(max-width:700px){header,main,footer{width:90%}header{gap:10px}.brand{font-size:20px}nav{gap:12px;font-size:12px}.hero,.cards,#sobre-mi,footer{grid-template-columns:1fr}.hero{gap:28px;padding:32px 0}.hero img{height:340px;object-position:center 64%}.hero h1{font-size:clamp(52px,15vw,88px)}.gallery{display:grid;grid-template-columns:1fr}figure{max-width:100%}.intro{margin-top:30px}.actions{gap:20px}.card small{letter-spacing:.07em}footer a{overflow-wrap:anywhere}}
+
+.hero img, .cover, figure img { border-radius: 16px; }
+
+.convencion-fotos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 980px; }
+.convencion-fotos figure { width: 100%; max-width: none; margin: 0; }
+
+.convencion-fotos img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  max-height: none;
+  object-fit: contain;
+}
+@media (max-width: 700px) { .convencion-fotos { grid-template-columns: 1fr; } }
+
+.gallery .foto-charla { width: min(100%, 232px); }
+.foto-charla img { width: 100%; height: auto; }
+
+.convencion-fotos .equipo-vertical img {
+  width: 50%;
+  aspect-ratio: auto;
+  margin-inline: auto;
+}
+.equipo-vertical figcaption { text-align: center; }
+.phone-frame {
+  width: min(100%, 276px);
+  position: relative;
+  padding: 12px 5px 10px;
+  border: 2px solid #635f59;
+  border-radius: 29px;
+  background: #191918;
+  box-shadow: 0 4px 12px #25201a22;
+}
+.phone-frame::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 3px;
+  border-radius: 3px;
+  background: #52514d;
+  top: 4px;
+  left: calc(50% - 16px);
+}
+.phone-frame img { width: 100%; height: auto; max-height: none; border-radius: 19px; }
